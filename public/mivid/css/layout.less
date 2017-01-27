@@ -1,0 +1,133 @@
+@import "../less/custom-variables.less";
+
+/*
+	Navbar-primary
+*/
+.navbar-default.navbar-primary{
+	background-color: @brand-primary;
+}
+
+.navbar-primary .navbar-brand, 
+.navbar-primary .navbar-brand:hover{
+	color:@white;
+}
+
+.navbar-primary .form-control{
+	border: none;
+}
+
+a:hover{
+	text-decoration: none;
+}
+
+.btn-inverse{
+	background: @btn-inverse-bg;
+	border-color: @btn-inverse-border;
+	color:@btn-inverse-color;
+}
+
+.btn:hover,.btn-default:hover,.btn-default:focus,.btn-default:active,.btn-default.active,.open .dropdown-toggle.btn-default{
+	background: @btn-default-hover-bg;
+	border-color: @btn-default-hover-border;
+	color:@black;
+}
+
+.btn-primary:hover,.btn-primary:focus,.btn-primary:active,.btn-primary.active,.open .dropdown-toggle.btn-primary{
+	background: @btn-primary-hover-bg;
+	border-color: @btn-primary-hover-border;
+	color:@white;
+}
+
+.btn-success:hover,.btn-success:focus,.btn-success:active,.btn-success.active,.open .dropdown-toggle.btn-success{
+	background: @btn-success-hover-bg;
+	border-color: @btn-success-hover-border;
+	color:@white;
+}
+
+.btn-info:hover,.btn-info:focus,.btn-info:active,.btn-info.active,.open .dropdown-toggle.btn-info{
+	background: @btn-info-hover-bg;
+	border-color: @btn-info-hover-border;
+	color:@white;
+}
+
+.btn-warning:hover,.btn-warning:focus,.btn-warning:active,.btn-warning.active,.open .dropdown-toggle.btn-warning{
+	background: @btn-warning-hover-bg;
+	border-color: @btn-warning-hover-border;
+	color:@white;
+}
+
+.btn-danger:hover,.btn-danger:focus,.btn-danger:active,.btn-danger.active,.open .dropdown-toggle.btn-danger{
+	background: @btn-danger-hover-bg;
+	border-color: @btn-danger-hover-border;
+	color:@white;
+}
+
+.btn-inverse:hover,.btn-inverse:focus,.btn-inverse:active,.btn-inverse.active,.open .dropdown-toggle.btn-inverse{
+	background: @btn-inverse-hover-bg;
+	border-color: @btn-inverse-hover-border;
+	color: @btn-inverse-color;
+}
+.btn-group > .btn-primary + .dropdown-toggle{
+	background:@btn-primary-hover-bg;
+}
+.btn-group > .btn-success + .dropdown-toggle{
+	background:@btn-success-hover-bg;
+}
+.btn-group > .btn-info + .dropdown-toggle{
+	background:@btn-info-hover-bg;
+}
+.btn-group > .btn-danger + .dropdown-toggle{
+	background:@btn-danger-hover-bg;
+}
+.btn-group > .btn-warning + .dropdown-toggle{
+	background:@btn-warning-hover-bg;
+}
+.btn-group > .btn-inverse + .dropdown-toggle{
+	background:@btn-inverse-hover-bg;
+}
+
+/*Forms*/
+.form-control {
+	box-shadow:none;
+}
+
+.form-control:focus {
+	border-color:@brand-primary;
+	-webkit-box-shadow:none;
+	box-shadow:none;
+}
+
+.has-success {
+  .form-control-validation(@brand-success; @brand-success; @brand-success);
+}
+.has-success .form-control,.has-success .form-control:focus{
+	border-color: @brand-success;
+	box-shadow: none;
+	-webkit-box-shadow: none;
+}
+
+.has-warning {
+  .form-control-validation(@brand-warning,@brand-warning,@brand-warning);
+}
+.has-warning .form-control,.has-warning .form-control:focus{
+	border-color: @brand-warning;
+	box-shadow: none;
+	-webkit-box-shadow: none;
+}
+
+
+.has-error {
+  .form-control-validation(@brand-danger; @brand-danger; @brand-danger);
+}
+.has-error .form-control,.has-error .form-control:focus{
+	border-color: @brand-danger;
+	box-shadow: none;
+	-webkit-box-shadow: none;
+}
+
+
+/* Panels */
+.panel{
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}

@@ -1,0 +1,118 @@
+/*
+	CSS standards as per http://mdo.github.io/code-guide/
+*/
+
+@font-face {
+    font-family: 'Lucida';
+    font-style: normal;
+	font-weight: 400;
+	src: url("../fonts/Lucida Grande.ttf");
+}
+
+body{
+	margin: 0;
+	padding: 0;
+	font-family: "Lucida",sans-serif;  /* "Lucida Sans","Lucida Grande",Garuda,sans-serif */
+	font-size: 12px;
+}
+
+.header{
+	height: 47px;
+	margin-right: 15px;
+	margin-left: 15px;
+	margin-top: -2px;
+	background: #3b5998;
+	border-bottom: 1px solid #133783;
+	border-radius: 3px;
+}
+
+.header .logo{
+	display: inline-block;
+	margin-top:10px;
+	margin-left:15px;
+	color: #fff;
+	font-size: 25px;
+	font-weight: bold;
+}
+
+.calendar{
+	clear: both;
+	display: table;
+	margin-bottom: 100px;
+	padding: 40px 40px 40px 20px;
+}
+
+.calendar .timeline{
+	width: 100px;
+	height: 730px;
+	display: inline-block;
+	float: left;
+	background: #fff;
+}
+
+.calendar .timeline ul{
+	padding: 0;
+	margin: 0;
+	margin-right: 10px;
+	margin-top: -6px;
+	list-style-type: none;
+ }
+
+.calendar .timeline ul li{
+	height: 30.416666666666668px;
+	font-size: 13px;
+	font-weight: bold;
+	float: right;
+	color: #686868;
+}
+
+.calendar .timeline ul li span{
+	color: #b3b3b3;
+	font-size: 11px;
+}
+
+.calendar .timeline ul li.alt{
+	margin-left: 100px;
+	font-size: 11px;
+	font-weight: 500;
+}
+
+.calendar .well{
+	position: relative;
+	width: 619px;
+	height: 720px;
+	margin-left: 100px;
+	background: #ececec;
+	border-radius: 1px;
+	border-left:1px solid #d6d6d6;
+	border-top: 1px solid #d6d6d6;
+	border-bottom: 1px solid #d6d6d6;
+	overflow:hidden;
+}
+
+
+.calendar .well .event{
+	position: absolute;
+	width: 595px;
+	background: #fff;
+	box-shadow:0px 0px 0px 1px #d5d5d5 inset;
+	border-left: 5px solid #4b6ea9;
+	word-break: break-all;
+	overflow: hidden;
+}
+
+.calendar .well .event p{
+	margin: 0;
+	padding:5px;
+	padding-bottom: 0px;
+	font-size: 12px;
+	font-weight: 500;
+	color: #4b6ea9;
+}
+
+.calendar .well .event p.mute{
+	padding-top: 2px;
+	font-weight: 300;
+	font-size: 10px;
+	color: #797979;
+}

@@ -1,0 +1,420 @@
+/* The MIT License */
+.uploader,
+.uploader *,
+.uploader-previews,
+.uploader-previews * {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.uploader {
+  position: relative;
+  border: 1px solid rgba(0,0,0,0.08);
+  background: white;
+  padding: 1em;
+
+}
+.uploader.dz-clickable {
+  cursor: pointer;
+}
+.uploader.dz-clickable .dz-message,
+.uploader.dz-clickable .dz-message span {
+  cursor: pointer;
+}
+.uploader.dz-clickable * {
+  cursor: default;
+}
+.uploader .dz-message {
+  opacity: 1;
+  -ms-filter: none;
+  filter: none;
+}
+.uploader.dz-drag-hover {
+  border-color: rgba(0,0,0,0.15);
+  background: rgba(0,0,0,0.04);
+}
+.uploader.dz-started .dz-message {
+  display: none;
+}
+.uploader .dz-preview,
+.uploader-previews .dz-preview {
+  background: rgba(255,255,255,0.8);
+  position: relative;
+  display: inline-block;
+  margin: 17px;
+  vertical-align: top;
+  border: 1px solid #acacac;
+  padding: 6px 6px 6px 6px;
+}
+.uploader .dz-preview.dz-file-preview [data-dz-thumbnail],
+.uploader-previews .dz-preview.dz-file-preview [data-dz-thumbnail] {
+  display: none;
+}
+.uploader .dz-preview .dz-details,
+.uploader-previews .dz-preview .dz-details {
+  width: 150px;
+  height: 150px;
+  position: relative;
+  background: #ebebeb;
+  padding: 5px;
+  margin-bottom: 22px;
+}
+.uploader .dz-preview .dz-details .dz-filename,
+.uploader-previews .dz-preview .dz-details .dz-filename {
+  overflow: hidden;
+  height: 100%;
+}
+.uploader .dz-preview .dz-details img,
+.uploader-previews .dz-preview .dz-details img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 150px;
+  height: 150px;
+}
+.uploader .dz-preview .dz-details .dz-size,
+.uploader-previews .dz-preview .dz-details .dz-size {
+  position: absolute;
+  bottom: -28px;
+  left: 3px;
+  height: 28px;
+  line-height: 28px;
+}
+.uploader .dz-preview.dz-error .dz-error-mark,
+.uploader-previews .dz-preview.dz-error .dz-error-mark {
+  display: block;
+}
+.uploader .dz-preview.dz-success .dz-success-mark,
+.uploader-previews .dz-preview.dz-success .dz-success-mark {
+  display: block;
+}
+.uploader .dz-preview:hover .dz-details img,
+.uploader-previews .dz-preview:hover .dz-details img {
+  display: none;
+}
+.uploader .dz-preview .dz-success-mark,
+.uploader-previews .dz-preview .dz-success-mark,
+.uploader .dz-preview .dz-error-mark,
+.uploader-previews .dz-preview .dz-error-mark {
+  display: none;
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  font-size: 30px;
+  text-align: center;
+  right: -10px;
+  top: -10px;
+}
+.uploader .dz-preview .dz-success-mark,
+.uploader-previews .dz-preview .dz-success-mark {
+  color: rgb(50, 160, 238);
+}
+.uploader .dz-preview .dz-error-mark,
+.uploader-previews .dz-preview .dz-error-mark {
+  color: #ee162d;
+}
+.uploader .dz-preview .dz-progress,
+.uploader-previews .dz-preview .dz-progress {
+  position: absolute;
+  top: 150px;
+  left: 6px;
+  right: 6px;
+  height: 6px;
+  background: #d7d7d7;
+  display: none;
+}
+.uploader .dz-preview .dz-progress .dz-upload,
+.uploader-previews .dz-preview .dz-progress .dz-upload {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  background-color: rgb(50, 160, 238);
+}
+.uploader .dz-preview.dz-processing .dz-progress,
+.uploader-previews .dz-preview.dz-processing .dz-progress {
+  display: block;
+}
+.uploader .dz-preview .dz-error-message,
+.uploader-previews .dz-preview .dz-error-message {
+  display: none;
+  position: absolute;
+  top: -5px;
+  left: -20px;
+  background: rgba(245,245,245,0.8);
+  padding: 8px 10px;
+  color: #800;
+  min-width: 140px;
+  max-width: 500px;
+  z-index: 500;
+}
+.uploader .dz-preview:hover.dz-error .dz-error-message,
+.uploader-previews .dz-preview:hover.dz-error .dz-error-message {
+  display: block;
+}
+.uploader {
+  border: 1px solid rgba(0,0,0,0.03);
+  min-height: 260px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  background: white;
+  padding: 23px;
+  border-color: rgb(50, 160, 238);
+
+}
+.uploader .dz-default.dz-message {
+
+ /* background-image: url("../img/drag_drop.png");*/
+  position: absolute;
+  width: 211px;
+  height: 136px;
+  margin-left: -105px;
+  margin-top: -68px;
+  top: 50%;
+  left: 50%;
+
+
+}
+@media all and (-webkit-min-device-pixel-ratio:1.5),(min--moz-device-pixel-ratio:1.5),(-o-min-device-pixel-ratio:1.5/1),(min-device-pixel-ratio:1.5),(min-resolution:138dpi),(min-resolution:1.5dppx) {
+  .uploader .dz-default.dz-message {
+    -webkit-background-size: 428px 406px;
+    -moz-background-size: 428px 406px;
+    background-size: 428px 406px;
+  }
+}
+.uploader .dz-default.dz-message span {
+  display: none;
+}
+.uploader.dz-square .dz-default.dz-message {
+  background-position: 0 -123px;
+  width: 268px;
+  margin-left: -134px;
+  height: 174px;
+  margin-top: -87px;
+}
+.uploader.dz-drag-hover .dz-message {
+  opacity: 0.15;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=15)";
+  filter: a2lpha(opacity=15);
+}
+.uploader.dz-started .dz-message {
+  display: block;
+  opacity: 0;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: alpha(opacity=0);
+}
+.uploader .dz-preview,
+.uploader-previews .dz-preview {
+  -webkit-box-shadow: 1px 1px 4px rgba(0,0,0,0.16);
+  box-shadow: 1px 1px 4px rgba(0,0,0,0.16);
+  font-size: 14px;
+}
+.uploader .dz-preview.dz-image-preview:hover .dz-details img,
+.uploader-previews .dz-preview.dz-image-preview:hover .dz-details img {
+  display: block;
+  opacity: 0.1;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=10)";
+  filter: alpha(opacity=10);
+}
+.uploader .dz-preview.dz-success .dz-success-mark,
+.uploader-previews .dz-preview.dz-success .dz-success-mark {
+  opacity: 1;
+  -ms-filter: none;
+  filter: none;
+}
+.uploader .dz-preview.dz-error .dz-error-mark,
+.uploader-previews .dz-preview.dz-error .dz-error-mark {
+  opacity: 1;
+  -ms-filter: none;
+  filter: none;
+}
+.uploader .dz-preview.dz-error .dz-progress .dz-upload,
+.uploader-previews .dz-preview.dz-error .dz-progress .dz-upload {
+  background: #ee1e2d;
+}
+.uploader .dz-preview .dz-error-mark,
+.uploader-previews .dz-preview .dz-error-mark,
+.uploader .dz-preview .dz-success-mark,
+.uploader-previews .dz-preview .dz-success-mark {
+  display: block;
+  opacity: 0;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: alpha(opacity=0);
+  -webkit-transition: opacity 0.4s ease-in-out;
+  -moz-transition: opacity 0.4s ease-in-out;
+  -o-transition: opacity 0.4s ease-in-out;
+  -ms-transition: opacity 0.4s ease-in-out;
+  transition: opacity 0.4s ease-in-out;
+  background-repeat: no-repeat;
+}
+@media all and (-webkit-min-device-pixel-ratio:1.5),(min--moz-device-pixel-ratio:1.5),(-o-min-device-pixel-ratio:1.5/1),(min-device-pixel-ratio:1.5),(min-resolution:138dpi),(min-resolution:1.5dppx) {
+  .uploader .dz-preview .dz-error-mark,
+  .uploader-previews .dz-preview .dz-error-mark,
+  .uploader .dz-preview .dz-success-mark,
+  .uploader-previews .dz-preview .dz-success-mark {
+    -webkit-background-size: 428px 406px;
+    -moz-background-size: 428px 406px;
+    background-size: 428px 406px;
+  }
+}
+.uploader .dz-preview .dz-error-mark span,
+.uploader-previews .dz-preview .dz-error-mark span,
+.uploader .dz-preview .dz-success-mark span,
+.uploader-previews .dz-preview .dz-success-mark span {
+  display: none;
+}
+.uploader .dz-preview .dz-error-mark,
+.uploader-previews .dz-preview .dz-error-mark {
+  background-position: -268px -123px;
+}
+.uploader .dz-preview .dz-success-mark,
+.uploader-previews .dz-preview .dz-success-mark {
+  background-position: -268px -163px;
+}
+.uploader .dz-preview .dz-progress .dz-upload,
+.uploader-previews .dz-preview .dz-progress .dz-upload {
+  -webkit-animation: loading 0.4s linear infinite;
+  -moz-animation: loading 0.4s linear infinite;
+  -o-animation: loading 0.4s linear infinite;
+  -ms-animation: loading 0.4s linear infinite;
+  animation: loading 0.4s linear infinite;
+  -webkit-transition: width 0.3s ease-in-out;
+  -moz-transition: width 0.3s ease-in-out;
+  -o-transition: width 0.3s ease-in-out;
+  -ms-transition: width 0.3s ease-in-out;
+  transition: width 0.3s ease-in-out;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  background-repeat: repeat-x;
+  background-position: 0px -400px;
+}
+@media all and (-webkit-min-device-pixel-ratio:1.5),(min--moz-device-pixel-ratio:1.5),(-o-min-device-pixel-ratio:1.5/1),(min-device-pixel-ratio:1.5),(min-resolution:138dpi),(min-resolution:1.5dppx) {
+  .uploader .dz-preview .dz-progress .dz-upload,
+  .uploader-previews .dz-preview .dz-progress .dz-upload {
+    -webkit-background-size: 428px 406px;
+    -moz-background-size: 428px 406px;
+    background-size: 428px 406px;
+  }
+}
+.uploader .dz-preview.dz-success .dz-progress,
+.uploader-previews .dz-preview.dz-success .dz-progress {
+  display: block;
+  opacity: 0;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: alpha(opacity=0);
+  -webkit-transition: opacity 0.4s ease-in-out;
+  -moz-transition: opacity 0.4s ease-in-out;
+  -o-transition: opacity 0.4s ease-in-out;
+  -ms-transition: opacity 0.4s ease-in-out;
+  transition: opacity 0.4s ease-in-out;
+}
+.uploader .dz-preview .dz-error-message,
+.uploader-previews .dz-preview .dz-error-message {
+  display: block;
+  opacity: 0;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: alpha(opacity=0);
+  -webkit-transition: opacity 0.3s ease-in-out;
+  -moz-transition: opacity 0.3s ease-in-out;
+  -o-transition: opacity 0.3s ease-in-out;
+  -ms-transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
+}
+.uploader .dz-preview:hover.dz-error .dz-error-message,
+.uploader-previews .dz-preview:hover.dz-error .dz-error-message {
+  opacity: 1;
+  -ms-filter: none;
+  filter: none;
+}
+.uploader a.dz-remove,
+.uploader-previews a.dz-remove {
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #fafafa), color-stop(1, #eee));
+  background-image: -webkit-linear-gradient(top, #fafafa 0, #eee 100%);
+  background-image: -moz-linear-gradient(top, #fafafa 0, #eee 100%);
+  background-image: -o-linear-gradient(top, #fafafa 0, #eee 100%);
+  background-image: -ms-linear-gradient(top, #fafafa 0, #eee 100%);
+  background-image: linear-gradient(top, #fafafa 0, #eee 100%);
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  border: 1px solid #eee;
+  text-decoration: none;
+  display: block;
+  padding: 4px 5px;
+  text-align: center;
+  color: #aaa;
+  margin-top: 26px;
+}
+.uploader a.dz-remove:hover,
+.uploader-previews a.dz-remove:hover {
+  color: #666;
+}
+@-moz-keyframes loading {
+  0% {
+    background-position: 0 -400px;
+  }
+
+  100% {
+    background-position: -7px -400px;
+  }
+}
+@-webkit-keyframes loading {
+  0% {
+    background-position: 0 -400px;
+  }
+
+  100% {
+    background-position: -7px -400px;
+  }
+}
+@-o-keyframes loading {
+  0% {
+    background-position: 0 -400px;
+  }
+
+  100% {
+    background-position: -7px -400px;
+  }
+}
+@-ms-keyframes loading {
+  0% {
+    background-position: 0 -400px;
+  }
+
+  100% {
+    background-position: -7px -400px;
+  }
+}
+@keyframes loading {
+  0% {
+    background-position: 0 -400px;
+  }
+
+  100% {
+    background-position: -7px -400px;
+  }
+}
+
+  .dz-success-mark{
+  	position: absolute;
+    left: 35%;
+    margin-top: 80px;
+
+}
+  .dz-error-mark{
+  	position: absolute;
+    left: 40%;
+    margin-top: 80px;
+
+}
+.dz-success-mark .icon-ok{
+	opacity:0.7;
+}
+.dz-error-mark .icon-close{
+	opacity: 1;
+}

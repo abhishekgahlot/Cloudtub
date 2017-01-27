@@ -1,0 +1,179 @@
+@import "bootstrap/bootstrap.less";
+
+@white:					#fff;
+@black:					#000;
+@gray-darker:            lighten(@black, 13.5%); // #222
+@gray-dark:              lighten(@black, 20%);   // #333
+@gray:                   lighten(@black, 33.5%); // #555
+@gray-light:             lighten(@black, 60%);   // #999
+@gray-lighter:           #f5f5f5; // #f5f5f5 #f8fafc
+
+@brand-primary:         #2196F3; //#1fcbbf; #009587
+@brand-success:         #009587; // #1abc8f  #0f9d58
+@brand-info:            #16c4ec; // #16c4ec  #03a9f4
+@brand-warning:         #ff5722; // #EBCA15
+@brand-danger:          #f44336; // #ff6053
+@brand-inverse:			#33495f;
+
+
+//Fonts
+@font-family-sans-serif:  'Oxygen', sans-serif;
+@font-family-serif:       'Oxygen', sans-serif;
+// Default monospace fonts for `<code>`, `<kbd>`, and `<pre>`.
+@font-family-monospace:   Menlo, Monaco, Consolas, "Courier New", monospace;
+@font-family-base:        @font-family-sans-serif;
+
+
+
+//Buttons
+@btn-font-weight:                normal;
+
+@btn-default-color:              @black;
+@btn-default-bg:                 @white;
+@btn-default-border:             #eeeeee;
+@btn-default-hover-bg:			 lighten(@btn-default-border, 2%);
+@btn-default-hover-border:		 @btn-default-border;
+
+@btn-primary-color:              @white;
+@btn-primary-bg:                 @brand-primary;
+@btn-primary-border:             @brand-primary;
+@btn-primary-hover-bg:			 lighten(@btn-primary-bg, 2%);
+@btn-primary-hover-border:		 @btn-primary-hover-bg;
+
+@btn-success-color:              @white;
+@btn-success-bg:                 @brand-success;
+@btn-success-border:             @brand-success;
+@btn-success-hover-bg:			 lighten(@btn-success-bg, 2%);
+@btn-success-hover-border:		 @btn-success-hover-bg;
+
+@btn-info-color:                 @white;
+@btn-info-bg:                    @brand-info;
+@btn-info-border:                @brand-info;
+@btn-info-hover-bg:			     lighten(@btn-info-bg, 5%);
+@btn-info-hover-border:		 	 @btn-info-hover-bg;
+
+@btn-warning-color:              @white;
+@btn-warning-bg:                 @brand-warning;
+@btn-warning-border:             @brand-warning;
+@btn-warning-hover-bg:			 lighten(@btn-warning-bg, 5%);
+@btn-warning-hover-border:		 @btn-warning-hover-bg;
+
+@btn-danger-color:               @white;
+@btn-danger-bg:                  @brand-danger;
+@btn-danger-border:              @brand-danger;
+@btn-danger-hover-bg:			 lighten(@btn-danger-bg, 3%);
+@btn-danger-hover-border:		 @btn-danger-hover-bg;
+
+@btn-inverse-color:               @white;
+@btn-inverse-bg:                  @brand-inverse;
+@btn-inverse-border:              @brand-inverse;
+@btn-inverse-hover-bg:			  lighten(@btn-inverse-bg, 5%);
+@btn-inverse-hover-border:		  @btn-inverse-hover-bg;
+
+@btn-link-disabled-color:        @gray-light;
+
+
+//== Form states and alerts
+//
+//## Define colors for form feedback states and, by default, alerts.
+
+@state-success-text:             #3c763d;
+@state-success-bg:               lighten(@brand-success,30%);
+@state-success-border:           @state-success-bg;
+
+@state-info-text:                #31708f;
+@state-info-bg:                  lighten(@brand-info,30%);
+@state-info-border:              @state-info-bg;
+
+@state-warning-text:             #8a6d3b;
+@state-warning-bg:               lighten(@brand-warning,40%);
+@state-warning-border:           @state-warning-bg;
+
+@state-danger-text:              #a94442;
+@state-danger-bg:                lighten(@brand-danger,30%);
+@state-danger-border:            @state-danger-bg;
+
+
+
+//== Tables
+//
+//## Customizes the `.table` component with basic values, each used across all table variations.
+
+// Padding for `<th>`s and `<td>`s.
+@table-cell-padding:            10px;
+
+// Background color used for `.table-striped`.
+@table-bg-accent:               @gray-lighter;
+// Background color used for `.table-hover`.
+@table-bg-hover:                @gray-lighter;
+@table-bg-active:               @table-bg-hover;
+
+// Border color for table and cell borders.
+@table-border-color:            #e7e7e7;
+
+
+
+//== Forms
+//
+//##
+
+// `<input>` background color
+@input-bg:                       @white;
+// `<input disabled>` background color
+@input-bg-disabled:              @gray-lighter;
+
+// Text color for `<input>`s
+@input-color:                    #666666; // @gray was there so do something about it.
+// `<input>` border color
+@input-border:                   #ccc;
+// `<input>` border radius
+@input-border-radius:            @border-radius-base;
+// Border color for inputs on focus
+@input-border-focus:             #66afe9;
+
+// Placeholder text color
+@input-color-placeholder:        @gray-light;
+
+
+//== Dropdowns
+//
+//## Dropdown menu container and contents.
+
+// Background for the dropdown menu.
+@dropdown-bg:                    @white;
+// Dropdown menu `border-color`.
+@dropdown-border:                rgba(0,0,0,.15);
+// Dropdown menu `border-color` **for IE8**.
+@dropdown-fallback-border:       #ccc;
+// Divider color for between dropdown items.
+@dropdown-divider-bg:            #e5e5e5;
+
+// Dropdown link text color.
+@dropdown-link-color:            @gray-dark;
+// Hover color for dropdown links.
+@dropdown-link-hover-color:      @white;
+// Hover background for dropdown links.
+@dropdown-link-hover-bg:         @brand-primary;
+
+
+//Wells
+@well-bg:                     @gray-lighter;
+@well-border:                 darken(@well-bg, 7%);
+
+
+//Panels
+@panel-footer-bg:             @gray-lighter;
+@panel-default-heading-bg:    @gray-lighter;
+@panel-default-border:		  #D8DBDF;
+
+//Breadcrumb
+@breadcrumb-bg:                @gray-lighter;
+
+//list btn-group
+@list-group-active-text-color: #fff;
+
+
+
+
+
+
