@@ -8,13 +8,13 @@
 <link href="cloud-static/css/uploader.css" type="text/css" rel="stylesheet" />
 <link href='cloud-static/css/lib/fullcalendar.css' rel='stylesheet' />
 <link href='cloud-static/css/lib/fullcalendar.print.css' rel='stylesheet' media='print' />
-<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css' />
-<link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,900,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css' />
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css' />
+<link href='https://fonts.googleapis.com/css?family=Lato:300,400,700,900,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css' />
 <link href="cloud-static/css/prism1.css" rel="stylesheet" />
 <link href="cloud-static/css/joyride-2.1.css" rel="stylesheet" />
 <link href="cloud-static/css/style.css" rel="stylesheet" type="text/css" media="screen" />
     <!--[if lt IE 9]>
-      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+      <script src="https://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /></head>
 <body>

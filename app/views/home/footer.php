@@ -32,7 +32,7 @@
     </div>
     <div class='footer-bar'></div>
 
-    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="https://code.jquery.com/jquery-latest.js"></script>
     <script src="home_static/js/bootstrap.min.js"></script>
     <script src="home_static/js/theme.js"></script>
 </body>

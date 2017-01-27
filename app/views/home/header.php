@@ -1,5 +1,5 @@
 <!-- begins navbar -->
-<link href='http://fonts.googleapis.com/css?family=Source+Code+Pro:400,600,700' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Source+Code+Pro:400,600,700' rel='stylesheet' type='text/css'>
 
 	<div class="navbar navbar-fixed-top">
 	<div class='top-bar'></div>
